@@ -41,7 +41,7 @@ export function links() {
     },
     {
       rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      href: "https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700;900&family=Roboto+Mono:wght@400;700&display=swap"
     }
   ]
 }
@@ -57,7 +57,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="text-gray-600">
+      <body className="text-ctp-subtext0-600">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -5,5 +5,39 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "typescript.experimental.tsserver.web.enableProjectWideIntellisense": false,
   "files.autoSave": "off",
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#F89CD9",
+    "editorBracketHighlight.foreground2": "#FFBEB9",
+    "editorBracketHighlight.foreground3": "#FFFAAD",
+    "editorBracketHighlight.foreground4": "#6BFABE",
+    "editorBracketHighlight.foreground5": "#97DCF7",
+    "editorBracketHighlight.foreground6": "#D6B4FF",
+    "editorBracketPairGuide.background1": "#F89CD99E",
+    "editorBracketPairGuide.background2": "#FFBEB99E",
+    "editorBracketPairGuide.background3": "#FFFAAD9E",
+    "editorBracketPairGuide.background4": "#6BFABE9E",
+    "editorBracketPairGuide.background5": "#97DCF79E",
+    "editorBracketPairGuide.background6": "#D6B4FF9E",
+    "editorBracketPairGuide.activeBackground1": "#F89CD99E",
+    "editorBracketPairGuide.activeBackground2": "#FFBEB99E",
+    "editorBracketPairGuide.activeBackground3": "#FFFAAD9E",
+    "editorBracketPairGuide.activeBackground4": "#6BFABE9E",
+    "editorBracketPairGuide.activeBackground5": "#97DCF79E",
+    "editorBracketPairGuide.activeBackground6": "#D6B4FF9E"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.fontFamily": "'MonoLisa Variable', 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.codeLensFontSize": 13,
+  "tailwindCSS.experimental.configFile": null
 }

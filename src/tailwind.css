@@ -13,13 +13,13 @@
 
   .card__content {
     @apply flex flex-col gap-2;
-  }
+  } c
 
   .card-p {
-    @apply text-sm opacity-80;
+    @apply text-ctp-lavender text-sm;
   }
   .card__title {
-    @apply select-none text-base-styles text-sm uppercase tracking-widest font-bold opacity-80;
+    @apply select-none text-ctp-pink text-sm uppercase tracking-widest font-bold;
   }
 
   .card__subtitle {
@@ -29,7 +29,7 @@
   /* Inputs */
 
   .btn {
-    @apply select-none border grid h-8 cursor-pointer grid-flow-col items-center justify-center gap-2 rounded-md bg-gray-200 px-2 text-sm font-bold text-gray-600 transition-all hover:opacity-70 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply select-none border grid h-8 cursor-pointer grid-flow-col items-center justify-center gap-2 rounded-md bg-ctp-subtext1 px-2 text-sm font-bold text-ctp-peach transition-all hover:opacity-70 disabled:cursor-not-allowed disabled:opacity-50;
   }
 
   .btn > svg,
@@ -38,31 +38,32 @@
   }
 
   .btn:disabled {
+    @apply bg-ctp-subtext1 text-ctp-crust;
     cursor: not-allowed;
   }
 
   .btn--outlined {
-    @apply border-current bg-transparent text-black/90 hover:bg-transparent hover:text-black/50;
+    @apply border-current bg-transparent accent-ctp-crust hover:bg-transparent hover:text-ctp-mantle/50;
   }
 
   .btn--outlined--light {
-    @apply border-current bg-transparent text-white/90 hover:bg-transparent hover:text-white/50;
+    @apply border-ctp-subtext0 bg-transparent text-ctp-text/90 hover:bg-transparent hover:text-ctp-text/50;
   }
 
   .btn.btn--primary {
-    @apply bg-blue-500 border-blue-500 text-white enabled:hover:bg-blue-600;
+    @apply bg-ctp-sky border-ctp-sky text-ctp-crust enabled:hover:bg-ctp-blue;
   }
 
   .btn--icon.btn--primary {
-    @apply text-blue-500;
+    @apply text-ctp-sky;
   }
 
   .btn--success {
-    @apply bg-green-500 text-white;
+    @apply bg-ctp-green text-ctp-base
   }
 
   .btn--danger {
-    @apply bg-red-500 text-white;
+    @apply bg-ctp-red text-ctp-text;
   }
 
   .btn--icon {
@@ -92,8 +93,8 @@
 
   .input {
     @apply h-8 w-full flex-grow;
-    @apply overflow-scroll text-ellipsis rounded border border-gray-300 px-1 text-sm transition-colors;
-    @apply enabled:cursor-pointer enabled:hover:border-gray-400 disabled:cursor-not-allowed;
+    @apply overflow-scroll text-ellipsis rounded border border-ctp-lavender px-1 text-sm transition-colors;
+    @apply enabled:cursor-pointer enabled:hover:border-ctp-mauve disabled:cursor-not-allowed;
   }
 
   .input:not(select) {
@@ -153,7 +154,7 @@
     /* Span all available columns */
     grid-column: 1 / -1;
   }
-  
+
   .left-arrow-space {
     left: var(--side-panel-width);
   }
@@ -172,7 +173,7 @@
 @layer utilities {
   .text-base-styles {
     @apply line-clamp-1;
-    /* font-weight: bold; */
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: space-between;

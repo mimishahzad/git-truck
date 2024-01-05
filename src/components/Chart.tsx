@@ -214,7 +214,7 @@ function Node({ d, isSearchMatch }: { d: CircleOrRectHiearchyNode; isSearchMatch
         "cursor-pointer": isBlob(d.data),
         "transition-all duration-1000 ease-in-out": transitionsEnabled,
         "animate-stroke-pulse": isSearchMatch,
-        "stroke-black/20": isTree(d.data)
+        "text-ctp-mantle/20": isTree(d.data)
       })}
     />
   )
@@ -254,8 +254,9 @@ function collapseText({
     let ps = 0
     let ds = 0
     while (ps < pathSteps.length && ds < dispSteps.length) {
-      if (pathSteps[ps] !== dispSteps[ds]) ps++
-      else {
+      if (pathSteps[ps] !== dispSteps[ds]) {
+        ps++
+      } else {
         ps++
         ds++
       }
@@ -323,7 +324,7 @@ function NodeText({ d, children = null }: { d: CircleOrRectHiearchyNode; childre
       {isTree(d.data) ? (
         <text
           className={clsx("pointer-events-none fill-none stroke-[7px] font-mono text-sm font-bold", {
-            "stroke-white": isBubbleChart
+            "text-ctp-text": isBubbleChart
           })}
           strokeLinecap="round"
         >

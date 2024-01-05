@@ -30,7 +30,7 @@ export function Breadcrumb() {
   return (
     <div className="flex items-center gap-1">
       {paths.length > 1
-        ? paths.map(([name, p], i) => {
+        ? paths.map(([name, p]: any, i: number) => {
             if (p === "" || i === paths.length - 1)
               if (p === "")
                 return (

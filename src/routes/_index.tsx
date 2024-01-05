@@ -10,6 +10,7 @@ import { GitCaller } from "~/analyzer/git-caller.server"
 import { getPathFromRepoAndHead } from "~/util"
 import { useState } from "react"
 import { RevisionSelect } from "~/components/RevisionSelect"
+import { variants } from "@catppuccin/palette";
 import gitTruckLogo from "~/assets/truck.png"
 
 interface IndexData {
@@ -84,7 +85,7 @@ function RepositoryGrid({ repositories }: { repositories: SerializeFrom<Reposito
           ))}
           <li className="card gap-3 p-0">
             <h2
-              className="card__title rounded-t bg-gradient-to-r from-blue-500 to-blue-600 p-3 pb-3 text-white transition-colors"
+              className="card__title rounded-t bg-gradient-to-r from-bg-ctp-blue-500 to-bg-ctp-blue-600 p-3 pb-3 text-ctp-text transition-colors"
               title="Add repository"
             >
               <span className="line-clamp-1 break-all">Add repository</span>
